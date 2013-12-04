@@ -1,0 +1,25 @@
+{
+  "name": "stockcn",
+  "version": "0.0.1",
+  "description": "Tool to get stock info you want.",
+  "main": "./lib/stock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "stockcn": "./bin/cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chenxiaoyao/stockcn.git"
+  },
+  "keywords": [
+    "stock",
+    "china"
+  ],
+  "author": "chenxy",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/chenxiaoyao/stockcn/issues"
+  }
+}
