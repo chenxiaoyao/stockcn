@@ -13,8 +13,8 @@ if (process.argv.length <= 2) {
 
 process.on('uncaughtException', console.log);
 
-var commands = ['list', 'ls', 'show'],
-    cmd = tokens.shift().toLowerCase(),
+var commands = ['list', 'ls', 'show', 'groups'],
+    cmd = tokens.shift(),
     log = null;
 
 if(commands.indexOf(cmd) === -1) {
@@ -26,6 +26,9 @@ if(commands.indexOf(cmd) === -1) {
 }
 
 cmd === 'ls' && (cmd = 'list');
+if(cmd == 'show') {
+    tokens = [tokens];
+}
 stock[cmd].apply(null, tokens);
 
 function help() {
